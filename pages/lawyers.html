@@ -3,45 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lawyer-connect</title>
+    <title>Law Firm - Our Lawyers</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer></script>
   </head>
-  <style>
-    body {
-      background-color: #f0f0f0;
-    }
-    header {
-      background-color: white;
-      color: rgb(26, 13, 13);
-      padding: 1rem;
-      text-align: center;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline;
-      margin-right: 1rem;
-    }
-    nav ul li a {
-      color: black;
-      text-decoration: none;
-    }
-  </style>
   <body>
     <header>
       <nav>
         <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-          <li>
-            <a href="../pages/contact.html">Contact</a>
-          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lawyers.html" class="active">Lawyers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
+    <main>
+      <h1>Meet Our Lawyers</h1>
+
+      <section id="lawyerProfiles">
+        <div class="lawyer-card">
+          <img src="https://via.placeholder.com/150" alt="Lawyer 1" />
+          <h2>Jane Thongori</h2>
+          <p>Specialization: Family Law</p>
+          <p>Contact: jane.thongori@lawfirm.com</p>
+          <img src="../images/download (1).jpeg" />
+        </div>
+        <div class="lawyer-card">
+          <img src="https://via.placeholder.com/150" alt="Lawyer 2" />
+          <h2>Mark Gregos</h2>
+          <p>Specialization: Criminal Law</p>
+          <p>Contact: mark.gregos@lawfirm.com</p>
+          <img src="../images/download.jpeg" />
+        </div>
+
+        <div class="lawyer-card">
+          <img src="https://via.placeholder.com/150" alt="Lawyer 3" />
+          <h2>Joe Jamail</h2>
+          <p>Specialization: Corporate Law</p>
+          <p>Contact: joe.jamail@lawfirm.com</p>
+          <img src="../images/download (2).jpeg" />
+        </div>
+      </section>
+      <section id="bookingForm">
+        <h2>Book a Lawyer</h2>
+        <form id="bookLawyerForm">
+          <div>
+            <label for="clientName">Name:</label>
+            <input type="text" id="clientName" name="clientName" required />
+          </div>
+          <div>
+            <label for="clientEmail">Email:</label>
+            <input type="email" id="clientEmail" name="clientEmail" required />
+          </div>
+
+          <div>
+            <label for="lawService">Type of Law Service:</label>
+            <select id="lawService" name="lawService" required>
+              <option value="">--Select--</option>
+              <option value="family">Family Law</option>
+              <option value="criminal">Criminal Law</option>
+              <option value="corporate">Corporate Law</option>
+            </select>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+        <div id="assignedLawyer"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Law Firm. All rights reserved.</p>
+    </footer>
+
+    <script src="js/lawyers.js"></script>
   </body>
 </html>

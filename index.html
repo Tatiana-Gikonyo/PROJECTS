@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lawyer-connect</title>
+    <title>Law Firm - Home</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
   </head>
@@ -11,17 +11,31 @@
     <header>
       <nav>
         <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-          <li>
-            <a href="./pages/lawyers.html">Lawyers</a>
-          </li>
-          <li>
-            <a href="./pages/contact.html">Contact</a>
-          </li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="lawyers.html">Lawyers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="about">
+        <h1>Welcome to Our Law Firm</h1>
+        <p>
+          We are a professional law firm providing quality legal services for
+          individuals, businesses, and organizations. Our experienced team of
+          lawyers is here to assist you with your legal needs.
+        </p>
+      </section>
+
+      <section id="booking">
+        <a href="./pages/lawyers.html" class="btn">Book a Lawyer</a>
+        <button id="bookLawyerBtn">Book a Lawyer</button>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Law Firm. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
