@@ -16,4 +16,24 @@ The Lawyer-Connect Landing Page is a professional website designed to introduce 
 1. **Clone the repository**:
 
 2. **Navigate to the project directory**:
+3. **Open the `index.html` file in your browser** to view the landing page:
+- Double-click the `index.html` file to open it in your default web browser.
+
+## Technologies Used
+- **HTML5**: For page structure and content.
+- **CSS3**: For layout and styling.
+- **JavaScript**: For added interactivity.
+
+## Enhancements and Features to Add
+- **Search Functionality**: Implement a search feature to allow users to find specific lawyers by name, specialty, or location.
+- **Booking System**: Develop an interactive booking system with forms and availability checks.
+- **Animations**: Enhance the UI with animations to improve user engagement.
+- **Contact Form**: Add a contact form to allow users to directly reach the law firm.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+Tatiana
+
 
